@@ -65,9 +65,12 @@ minis-mcp-cli tools doubao-mcp --refresh
 
 # 3. 冒烟测试：测试对话
 minis-mcp-cli call doubao-mcp doubao_chat --input '{"text":"你好，请用一句话介绍你自己"}'
+
+# 4. 实时问答测试：查天气（随叫随到，联网实时回答）
+minis-mcp-cli call doubao-mcp doubao_chat --input '{"text":"北京明天的天气怎么样？"}'
 ```
-🎉 当终端返回 `【回复】我是字节跳动自研的AI助手豆包...` 时，说明已经大功告成！  
-现在你的 Minis AI 已经掌握了随时调用豆包文生图、图生图换装、做视频、做音乐的全部本领！
+🎉 当终端返回真实问答与实时天气时，说明已经大功告成！  
+现在你的 Minis AI 已经掌握了随时调用豆包实时查天气、问答思考、文生图、图生图换装、做视频、做音乐的全部本领！在新窗口对 AI 说「问豆包明天的天气」，AI 就会立刻调起豆包为你服务！
 
 ---
 
@@ -77,7 +80,7 @@ minis-mcp-cli call doubao-mcp doubao_chat --input '{"text":"你好，请用一�
 | :--- | :--- | :--- |
 | **`doubao_image`** | 高清文生图，自动下载并全量 Markdown 直显所有候选大图 | `prompt` (提示词), `ratio` (1:1, 16:9, 9:16, 4:3, 3:4) |
 | **`doubao_variation`**| 图生图 / 换装变体，基于本地参考底图精准锁定人脸特征 | `image_path` (参考底图绝对路径), `prompt` (换装词), `ratio` |
-| **`doubao_chat`** | 文本对话，支持普通问答与深度思考（思维链）模式 | `text` (输入问题), `think` (true 开启思维链) |
+| **`doubao_chat`** | 文本对话与实时问答（支持查天气、新闻、普通问答与深度思考思维链模式） | `text` (输入问题), `think` (true 开启思维链) |
 | **`doubao_video`** | 动态短视频生成，自动下载落盘并返回 App 原生播放直链 | `prompt` (运动场景), `ratio`, `timeout` |
 | **`doubao_music`** | 音乐与音效生成，支持自定义流派与情绪 | `prompt` (主题歌词), `genre` (流派), `mood` (情绪) |
 
