@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.doubao_session.json
+doubao_outputs/
+*.mp4
+*.png
+*.jpg
+.DS_Store

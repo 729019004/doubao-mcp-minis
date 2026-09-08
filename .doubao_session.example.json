@@ -1,0 +1,7 @@
+{
+  "cookies": {
+    "sessionid": "在这里填入你的sessionid",
+    "ttwid": "在这里填入你的ttwid",
+    "passport_csrf_token": "在这里填入你的passport_csrf_token"
+  }
+}
