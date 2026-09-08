@@ -94,5 +94,6 @@ python3 doubao_api.py variation /path/to/photo.jpg --prompt "女仆装，轻抚�
 
 ## 📄 开源许可证
 
-本项目基于 [MIT License](LICENSE) 开源。
+本项目基于 [MIT License](LICENSE) 开源。  
+作者 / 维护者：**重装小兔R4C** ([@729019004](https://github.com/729019004))  
 仅供个人技术研究、学习与移动端 Agent 生态交流使用，请勿用于非法商业用途。
